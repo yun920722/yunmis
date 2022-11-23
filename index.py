@@ -99,8 +99,8 @@ def movie():
 
         doc_ref = db.collection("電影").document(movie_id)
         doc_ref.set(doc)
-        
-        return "近期上映電影已爬蟲及存檔完畢，網站最近更新日期為：" + lastUpdate
+
+    return "近期上映電影已爬蟲及存檔完畢，網站最近更新日期為：" + lastUpdate
 
 
 
