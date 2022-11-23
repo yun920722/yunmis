@@ -113,7 +113,7 @@ def search():
         #docs = collection_ref.where("title","==", "夜鷹的單戀").get()
         docs = collection_ref.order_by("showDate").get()  
         for doc in docs:
-            if "：" in doc.to_dict()["title"]:
+            if "：" in doc.to_dict()["MovieTitle"]:
                 info += "片名：" + doc.to_dict()["title"] + "<br>" 
                 info += "海報：" + doc.to_dict()["picture"] + "<br>"
                 info += "影片介紹：" + doc.to_dict()["hyperlink"] + "<br>"
